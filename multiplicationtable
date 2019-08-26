@@ -1,0 +1,18 @@
+"""
+
+multiplicationtable.py
+
+"""
+
+import sys
+
+t= input("Which multiplication table would you like to look up? ")
+table= int(t)
+
+multiplier=0
+while true multiplier < 11
+    print(f'{table} "*" multiplier "= " table*multiplier' )
+    multiplier =+1
+
+print(Here you go! )
+  sys.exit(0)
