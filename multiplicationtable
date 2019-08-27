@@ -6,13 +6,29 @@ multiplicationtable.py
 
 import sys
 
-t= input("Which multiplication table would you like to look up? ")
-table= int(t)
 
-multiplier=0
-while true multiplier < 11
-    print(f'{table} "*" multiplier "= " table*multiplier' )
-    multiplier =+1
+while True:
+    try:
+        t= input("Which multiplication table would you like to look up? ")
+        table= int(t)
+        multiplier=0
 
-print(Here you go! )
-  sys.exit(0)
+        print ()
+        while multiplier < 11:
+            print(f'{table} * {multiplier:2} =  {table*multiplier:2}' )
+            multiplier +=1
+        print()
+        print("Here you go! ")
+        break
+        
+    except EOFError:
+        sys.exit(1)
+    except KeyboardInterrupt:
+        sys.exit(1)
+    except ValueError:
+        print("Please enter an integer. ")
+        continue
+
+
+
+sys.exit(0)
